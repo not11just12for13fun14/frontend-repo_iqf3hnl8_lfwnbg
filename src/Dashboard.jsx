@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Search, Bell, User, Cloud, Shield, Zap, Settings, Server, CreditCard, ChartLine } from 'lucide-react'
+import { Search, Bell, User, Cloud, Shield, Zap, Settings, Server, CreditCard, LineChart } from 'lucide-react'
 
 const container = {
   hidden: { opacity: 0 },
@@ -121,7 +121,7 @@ export default function Dashboard() {
             <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.6 }} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
               <div className="mb-3 flex items-center justify-between">
                 <p className="text-sm font-medium">Findings</p>
-                <ChartLine className="h-4 w-4 text-slate-500" />
+                <LineChart className="h-4 w-4 text-slate-500" />
               </div>
               <div className="space-y-2">
                 {[
